@@ -12,10 +12,10 @@ import Description from "./components/Description";
 //Base component
 function App() {
 
-   let a = 51;
-   let b = 47;
+  let a=50;
+  let b=45;
 
-   let c = a + b - b / a
+   // let c = a + b - b / a
 
 // let birthdate = new Date('1990-04-23')
 
@@ -27,22 +27,11 @@ function App() {
 
    return (
    <>
-<div>
-the answer for the equation of {a} and {b} is {c} 
- </div>
-   <Header/>
+
 
    <Header/>
 
-   <Header/>
-
-   <Header/>
-   
-<Description />
-
-<Description />
-
-<Description />
+<Description   a = {45} b={55} c={a+b*b/a}  />
 
 
 
