@@ -1,6 +1,5 @@
-function Description(props) {
+function Description({a , b, c}) {
 
-    console.log(props);
     
     return (
         <>
@@ -9,7 +8,7 @@ function Description(props) {
             </p>
             <br />
             <div>
-                the answer for the equation of {props.a} and {props.b} is {props.c}
+                the answer for the equation of {a} and {b} is {c}
             </div>
         </>
     )
