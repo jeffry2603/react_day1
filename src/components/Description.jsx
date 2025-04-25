@@ -1,6 +1,12 @@
-function Description({a , b, c}) {
+function Description(props) {
 
-    
+    let a=50;
+  let b=45;
+//get the function from the parent component as a prop
+
+//execute the function to pass the values to the parent component
+
+props.get(a,b)
     return (
         <>
             <p>
@@ -8,10 +14,47 @@ function Description({a , b, c}) {
             </p>
             <br />
             <div>
-                the answer for the equation of {a} and {b} is {c}
+                the answer for the equation of {a} and {b} is {a+b}
             </div>
         </>
     )
 }
 
 export default Description;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

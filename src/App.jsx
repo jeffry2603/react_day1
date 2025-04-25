@@ -12,8 +12,7 @@ import Description from "./components/Description";
 //Base component
 function App() {
 
-  let a=50;
-  let b=45;
+  
 
    // let c = a + b - b / a
 
@@ -23,15 +22,22 @@ function App() {
 
 // let age = today.getFullYear() - birthdate.getFullYear()
 
+//create a function to get the values from child component
 
+function get (a,b){
+   console.log(a,b);
+}
+
+//pass the function to the child component
 
    return (
    <>
 
 
    <Header/>
+   //pass the function to the child component
 
-<Description   a = {45} b={55} c={a+b*b/a}  />
+<Description   get={get}  />
 
 
 
