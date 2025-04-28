@@ -1,13 +1,15 @@
 import React from 'react'
+import { useState } from 'react';
 
 const App = () => {
+//useState syntax and example with count
+let [count , setCount] = useState(0);
 
-  let count = 0;
+//state chnage causes re-render
 
 
   function handleClick(){
-    count++; //count = count +1 
-    console.log(count);
+    setCount(count++);
     
   }
 
