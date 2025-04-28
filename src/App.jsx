@@ -35,7 +35,6 @@ function get (a,b){
 
 
    <Header/>
-   //pass the function to the child component
 
 <Description   get={get}  />
 
