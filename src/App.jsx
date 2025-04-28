@@ -1,15 +1,24 @@
-import A from "./components/A";
+import React from 'react'
 
-function App() {
+const App = () => {
 
-//data in the parent component
+  let count = 0;
 
-let count =78;
 
+  function handleClick(){
+    count++; //count = count +1 
+    console.log(count);
+    
+  }
 
   return (
-    <A count ={count} />
-  )
+    <>
+<h1>Count: {count}</h1> 
+<button onClick={handleClick}>
+  Increase
+  </button>
+</>
+)
 }
 
-export default App;
+export default App
