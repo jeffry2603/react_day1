@@ -1,26 +1,56 @@
-import React from 'react'
-import { useState } from 'react';
+import { useState } from "react"
 
 const App = () => {
-//useState syntax and example with count
-let [count , setCount] = useState(0);
 
-//state chnage causes re-render
+  const [Likes, setLikes] = useState(0);
+  const [Dislikes , setDislikes] = useState(0);
 
-
-  function handleClick(){
-    setCount(count++);
-    
+  function handleLike() {
+    setLikes(Likes + 1);
   }
+
+  function handleDislike() {
+    setDislikes(Dislikes + 1);
+  }
+
 
   return (
     <>
-<h1>Count: {count}</h1> 
-<button onClick={handleClick}>
-  Increase
-  </button>
-</>
-)
+<button onClick={handleLike}>Like</button> {Likes}  :Likes
+
+<br />
+
+<button onClick={handleDislike}>Dislike</button> {Dislikes} :Dislike
+
+    </>
+  )
+
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
